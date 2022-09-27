@@ -20,9 +20,8 @@ New Tim Hortons Script for a Tim Hortons MLO I am working on for FiveM
 --
 --
 
-Insert into @qb-smallresources --> server --> consumables.lua
--
--
+## Insert into @qb-smallresources --> server --> consumables.lua
+```
 
 
 --Tim Hortons restaruant 
@@ -91,11 +90,11 @@ QBCore.Functions.CreateUseableItem("timmies-sandwich", function(source, item)
         TriggerClientEvent("consumables:client:Eat", source, item.name)
     end
 end)
-
+```
 -
 -
--- Insert into @qb-smallresources --> config.lua --
-
+## -- Insert into @qb-smallresources --> config.lua --
+```
 ConsumeablesEat = {
 
 -- Tim Hortons
@@ -113,12 +112,10 @@ ConsumeablesDrink = {
     ["timmies-icecap"] = math.random(40, 50),
 
 }
+```
 
---Insert this into @qb-core --> Shared.lua --
-
--
--
-
+##--Insert this into @qb-core --> Shared.lua --
+```
 
 -- Tim Hortons
 -- Food
@@ -137,7 +134,7 @@ ConsumeablesDrink = {
 	["tim-sandwichmeat"] 				 	 = {["name"] = "tim-sandwichmeat", 			 	  		["label"] = "sandwich meat", 						["weight"] = 125, 		["type"] = "item", 		["image"] = "sandwichmeat.png", 						["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "An Ingredient"},
 	["tim-dough"] 				 	 = {["name"] = "tim-dough", 			 	  		["label"] = "Dough", 			["weight"] = 125, 		["type"] = "item", 		["image"] = "dough.png", 		    		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "An Ingredient"},
 	["tim-water"] 				 = {["name"] = "tim-water", 			 		["label"] = "Jug of water", 					["weight"] = 220, 		["type"] = "item", 		["image"] = "waterjug.png", 	    			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "An Ingredient"},
-	
+```	
 (Will add more ingredients)
 
 
