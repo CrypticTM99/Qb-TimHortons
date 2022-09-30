@@ -137,5 +137,34 @@ ConsumeablesDrink = {
 ```	
 (Will add more ingredients)
 
-
+## Add in to your shared jobs (Located in qb-core/shared/jobs.lua)
+```
+   ["Tim Hortons"] = {
+		label = "Tims Employee",
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = "Trainee",
+                payment = 500
+            },
+			['1'] = {
+                name = "Employee",
+                payment = 750
+            },
+			['2'] = {
+                name = "Supervisor",
+                payment = 1200
+            },
+			['3'] = {
+                name = "Manager",
+                payment = 1550
+            },
+			['4'] = {
+                name = "CEO",
+				isboss = true,
+                payment = 2500
+            },
+        },
+	},
+```
 
